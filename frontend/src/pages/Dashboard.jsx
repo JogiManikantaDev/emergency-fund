@@ -42,7 +42,7 @@ function Dashboard() {
       return;
     }
     try {
-      await axios.post('http://localhost:5000/api/donations',
+      await axios.post('https://emergency-fund-backend.onrender.com',
         { amount: Number(amount), note },
         { headers: { Authorization: `Bearer ${token}` } }
       );

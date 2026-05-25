@@ -7,7 +7,7 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/donations/summary')
+    axios.get('https://emergency-fund-backend.onrender.com')
       .then(res => setSummary(res.data))
       .catch(err => console.log(err));
   }, []);

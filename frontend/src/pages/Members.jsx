@@ -17,7 +17,7 @@ function Members() {
 
   const fetchMembers = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/donations/all', {
+      const res = await axios.get('https://emergency-fund-backend.onrender.com', {
         headers: { Authorization: `Bearer ${token}` }
       });
 
